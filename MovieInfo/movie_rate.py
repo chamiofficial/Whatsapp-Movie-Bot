@@ -15,7 +15,7 @@ def get_ratings(details):
 
 
 def format_util(x, details):
-    return "*" + x + "* : " + details[x] + '\n'
+    return "*" + x + "* : " + details[x] + '\n\n'
 
 
 def get_body(title, details):
@@ -23,7 +23,7 @@ def get_body(title, details):
         return "Sorry no movie named " + title + " found."
     else:
         body = ("Here is your Movie details\n" +
-                format_util('Title', details) +
+                format_util('✅ Title', details) +
                 format_util('Runtime', details) +
                 format_util('Genre', details) +
                 format_util('Released', details) +
